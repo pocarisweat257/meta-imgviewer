@@ -1,0 +1,14 @@
+[Unit]
+Description=My Qt Application
+After=network.target
+
+[Service]
+Environment="QT_QPA_PLATFORM=linuxfb"
+ExecStart=/usr/bin/myapp -platform linuxfb
+Restart=always
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

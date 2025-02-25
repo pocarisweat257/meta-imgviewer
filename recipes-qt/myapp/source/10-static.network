@@ -1,0 +1,7 @@
+[Match]
+Name=end0
+
+[Network]
+Address=192.168.24.165/24
+Gateway=192.168.24.1
+DNS=210.123.32.13
